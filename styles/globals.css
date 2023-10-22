@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* GabAI Start */
+.gabAIContainer{
+  width: 100% !important;
+  height: 100vh !important;
+}
+.gabAIBackground {
+  /* position: relative; */
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url("/GabAI-background.webp");
+  
+  background-size: cover;
+  color: white;
+}
+.gabAIHandContainer {
+  width: 100% !important;
+  height: 100% !important;
+}
+.gabAIHand {
+  float: right;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: url("/GabAI-Hand.webp");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 55% 105%;
+  color: white;
+}
+.gabAILogo {
+  display: inline;
+  width: 22vw !important;
+  height: auto !important;
+}
+.gabAIContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 70vw !important;
+  height: 100% !important;
+  font-size: 1.5vw;
+}
+.gabAIText{
+  width: 95%;
+  color: #363636;
+}
+.gabAIContentMobile{
+  display: none;
+}
+
+/* mobile */
+@media screen and (max-width: 700px) {
+  .gabAIContainer{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .gabAIHand {
+    display: none;
+  }
+  .gabAILogo {
+    width: 50vw !important;
+  }
+  .gabAIContentMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 4vw; */
+    /* background-image: url("/GabAI-Hand.webp");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50% 105%; */
+    font-size: 15px;
+    }
+  .gabAIContentMobileHand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/GabAI-Hand.webp");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50% 105%;
+    font-size: 15px;
+    }
+    .gabAIText{
+    width: 68%;
+    color: #363636;
+    }
+}
+
+/* ipad */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gabAIContainer {
+    height: 60vh !important;
+  }
+  .gabAIText{
+  font-size: 3.2vw;
+  color: #363636;
+  width: 90% !important;
+  } 
+  .gabAILogo {
+    width: 43vw !important;
+  }
+}
+/* GabAI Ends */
+
+.aboutUsContainer{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.aboutUsBackground{
+  width: 100% !important;
+  height: 100% !important;
+  background-image:url("/white bg.webp");
+  background-attachment: fixed;
+  color: white;
+}
+
+.col{
+  padding: 50px;
+}
+
+.col h1{
+  color: #434f9b;
+  font-weight: 800;
+  justify-content: justify;
+}
+
+.borderline{
+  border: 2px solid #ff8400;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.aboutUsText{
+  font-size: 23px;
+  color: #434f9b;
+  margin-right: 20px;
+}
+
+.aboutUsButton{
+  margin-top: 30px;
+  padding: 8px 50px;
+  border-radius: 30px;
+  color: #FFFF;
+  background-color: #808080;
+  border: 1px solid #808080;
+}
+
+.PSD-Container{
+  padding: 8.5rem;
+  flex: 1;
+  background: #fff;
+  border-radius: 2rem;
+  border: rgb(53,53,53) solid;
+  border-color: rgb(163,163,163);
+  margin: 5rem;
+}
+
+.PSD-Container h1{
+  color: #434f9b;
+  font-weight: 800;
+}
+.PSD-borderline{
+  border: 2px solid #ff8400;
+  width: 70%;
+  margin-bottom: 30px; 
+}
+
+.PSD-Text{
+  font-size: 20px;
+  color: #434f9b;
+  margin-right: 20px;
+}
+
+.MTPT-Container{
+  padding: 8.5rem;
+  flex: 1;
+  background: #fff;
+  border-radius: 2rem;
+  border: rgb(53,53,53) solid;
+  border-color: rgb(163,163,163);
+  margin: 5rem;
+}
+
+.MTPT-Container h1{
+  color: #434f9b;
+  font-weight: 800;
+}
+.MTPT-borderline{
+  border: 2px solid #ff8400;
+  width: 70%;
+  margin-bottom: 30px; 
+}
+
+.MTPT-Text{
+  font-size: 20px;
+  color: #434f9b;
+  margin-right: 20px;
+}
+
+/* About Us  mobile */
+@media screen and (max-width: 700px) {
+  .aboutUsContainer{
+    width: 100% !important;
+    height: auto !important;
+  }
+}
