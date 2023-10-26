@@ -100,7 +100,7 @@ body{
     height: 60vh !important;
   }
   .gabAIText{
-  font-size: 3.2vw;
+  font-size: 2.3vw;
   color: #363636;
   width: 90% !important;
   } 
@@ -110,6 +110,7 @@ body{
 }
 /* GabAI Ends */
 
+/*AboutUs Starts */
 .aboutUsContainer{
   width: 100% !important;
   height: 100% !important;
@@ -123,9 +124,24 @@ body{
   color: white;
 }
 
-.col{
-  padding: 50px;
+.aboutUsWave{
+  width: 100% !important;
+  height: 100% !important;
+  background-image:url("/wave2.webp");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
+
+.aboutUsContent{
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .col{
+    padding-bottom: 50px;
+  }
 
 .col h1{
   color: #434f9b;
@@ -155,61 +171,223 @@ body{
 }
 
 .PSD-Container{
-  padding: 8.5rem;
-  flex: 1;
+  padding: 5px;
   background: #fff;
   border-radius: 2rem;
-  border: rgb(53,53,53) solid;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.4);
   border-color: rgb(163,163,163);
-  margin: 5rem;
+  height: 10rem;
+  width: 35rem;
 }
 
-.PSD-Container h1{
+.PSD-Container h3{
+  margin: 15px;
   color: #434f9b;
   font-weight: 800;
-}
-.PSD-borderline{
-  border: 2px solid #ff8400;
-  width: 70%;
-  margin-bottom: 30px; 
+  text-align: center;
 }
 
-.PSD-Text{
-  font-size: 20px;
-  color: #434f9b;
-  margin-right: 20px;
+.PSD-slider{
+  margin: 0px 40px;
+}
+
+.PSD-images{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.arrow-left{
+  border: solid #ff8400;
+  border-width: 0 5px 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  float: left;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow-right{
+  border: solid #ff8400;
+  border-width: 0 5px 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  float: right;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
 }
 
 .MTPT-Container{
-  padding: 8.5rem;
-  flex: 1;
+  padding: 5px;
   background: #fff;
   border-radius: 2rem;
-  border: rgb(53,53,53) solid;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.4);
   border-color: rgb(163,163,163);
-  margin: 5rem;
+  height: 13.5rem;
+  width: 35rem;
 }
 
-.MTPT-Container h1{
+.MTPT-Container h3{
+  margin: 15px;
   color: #434f9b;
   font-weight: 800;
-}
-.MTPT-borderline{
-  border: 2px solid #ff8400;
-  width: 70%;
-  margin-bottom: 30px; 
+  text-align: center;
 }
 
-.MTPT-Text{
-  font-size: 20px;
+.MTPT-slider{
+  margin: 0px 40px;
+}
+
+.MTPT-images{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.card-details h5{
+  padding-top:0.5rem;
+  font-weight: bold;
   color: #434f9b;
-  margin-right: 20px;
+  font-size:12px;
+  text-align: center;
+
+}
+.card-details p{
+  color: black;
+  text-align: center;
+  font-size:10px;
 }
 
-/* About Us  mobile */
-@media screen and (max-width: 700px) {
-  .aboutUsContainer{
-    width: 100% !important;
-    height: auto !important;
+/*mobile */
+@media screen and (max-width: 766px) {
+
+  .aboutUsContent{
+    padding: 20px;
+  }
+
+  .col h1{
+    justify-content: justify;
+    font-size: 25px;
+  }
+  .borderline{
+    width: 25%;
+    margin-bottom: 30px;
+  }
+  .aboutUsText{
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+
+  .aboutUsButton{
+    padding: 7px 35px;
+    font-size: 12px;
+  }
+
+  iframe{
+    margin-left:4rem;
+    height:25rem;
+    width:35rem;
+  }
+
+  .PSD-Container{
+    padding: 4px;
+    margin-left: 2rem;
+  }
+
+  .MTPT-Container{
+    padding: 4px;
+    margin-left: 4rem;
+  }
+}
+
+/* ipad */
+@media  screen and (min-width: 767px) and (max-width: 992px){
+
+  .aboutUsContent{
+    padding-top: 30px;
+  }
+
+  .col h1{
+    justify-content: justify;
+    font-size: 25px;
+  }
+
+  .borderline{
+    width: 70%;
+  }
+
+  .aboutUsText{
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+
+  .aboutUsButton{
+    padding: 7px 35px;
+    font-size: 12px;
+  }
+
+  .ytContainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  height: 80%;
+  margin-top: 10px;
+}
+
+  .PSD-Container{
+    height:12rem;
+    width:40rem;
+    padding: 5px;
+    margin-left: 1rem;
+  }
+
+  .PSD-images{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .PSD-slider{
+    margin: 0px 50px;
+  }
+
+  .MTPT-Container{
+    height:14rem;
+    width:40rem;
+    padding: 5px;
+    margin-left: 4rem;
+  }
+
+  .MTPT-slider{
+    margin: 0px 50px;
+  }
+
+  .MTPT-images{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card-details h5{
+    padding-top:1rem;
+    font-size:14px;
+  }
+
+  .card-details p{
+    font-size:12px;
   }
 }
