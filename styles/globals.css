@@ -3,6 +3,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 /* GabAI Start */
@@ -265,7 +266,12 @@ body{
   text-align: center;
   font-size:10px;
 }
-
+.ytContainerMobile{
+display: none;
+}
+.carouselContainerMobile{
+  display: none;
+  }
 /*mobile */
 @media screen and (max-width: 766px) {
 
@@ -290,21 +296,36 @@ body{
     padding: 7px 35px;
     font-size: 12px;
   }
-
+  .ytContainer{
+    display: none;
+  }
+  .ytContainerMobile{
+    display: flex;
+    width: 100vw;
+    margin-bottom: 3vw;
+  }
   iframe{
-    margin-left:4rem;
+    /* margin-left:4rem; */
     height:25rem;
     width:35rem;
   }
-
+  .carouselContainer{
+  display: none;
+  }
+  .carouselContainerMobile{
+    display: flex;
+    margin: 3vw 0 3vw 0;
+    }
   .PSD-Container{
     padding: 4px;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    width: 100%;
   }
 
   .MTPT-Container{
     padding: 4px;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
+    width: 100%;
   }
 }
 

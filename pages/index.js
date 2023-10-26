@@ -95,26 +95,29 @@ export default function Home() {
             </div>
           </section>
           <section className="nrpContainer">
-              <div className="backgroundImage">
-                <div className="nrpMobileHeader">
-                  NATIONAL REMEDIATION PROGRAM 2023
-                </div>
-                <div className="imageOverlay">
-                  <div className="nrpTextbox">
-                    <div className="nrpHeader">
-                      NATIONAL REMEDIATION <br /> PROGRAM 2023
-                    </div>
-                    <div className="nrpText">
-                      <p>For our nonprofit organization, we aim to provide quality high-dosage 
-                      tutoring to students in public schools around the Philippines, in an effort to combat the learning loss brought by the pandemic.
-                      </p>
-                    </div>
-                    <div className="linkButton">
-                      <button className="linkText">Visit Tagpros.org</button>
-                    </div>
+            <div className="backgroundImage">
+              <div className="nrpMobileHeader">
+                NATIONAL REMEDIATION PROGRAM 2023
+              </div>
+              <div className="imageOverlay">
+                <div className="nrpTextbox">
+                  <div className="nrpHeader">
+                    NATIONAL REMEDIATION <br /> PROGRAM 2023
+                  </div>
+                  <div className="nrpText">
+                    <p>
+                      For our nonprofit organization, we aim to provide quality
+                      high-dosage tutoring to students in public schools around
+                      the Philippines, in an effort to combat the learning loss
+                      brought by the pandemic.
+                    </p>
+                  </div>
+                  <div className="linkButton">
+                    <button className="linkText">Visit Tagpros.org</button>
                   </div>
                 </div>
               </div>
+            </div>
           </section>
           <section className="Hero1Container"></section>
           <section className="aboutUsContainer">
@@ -147,20 +150,40 @@ export default function Home() {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullscreen
+                        allowFullScreen
                       ></iframe>
                     </div>
-                    <div className="row">
-                      <div
-                        className="col"
-                        style={{ paddingLeft: "7vw", paddingTop: "2vw" }}
-                      >
-                        <PSDCarousel />
-                      </div>
+                    <div className="ytContainerMobile">
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/NraS2OpfHO0?si=Pxo65yArlj2iNm3b"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                    <div className="carouselContainer">
+                      <div className="row">
+                        <div
+                          className="col"
+                          style={{ paddingLeft: "7vw", paddingTop: "2vw" }}
+                        >
+                          <PSDCarousel />
+                        </div>
 
-                      <div className="col" style={{ paddingRight: "4vw" }}>
-                        <MTPTCarousel />
+                        <div className="col" style={{ paddingRight: "4vw" }}>
+                          <MTPTCarousel />
+                        </div>
                       </div>
+                    </div>
+                    <div className="carouselContainerMobile">
+                      <PSDCarousel />
+                    </div>
+                    <div className="carouselContainerMobile">
+                      <MTPTCarousel />
                     </div>
                   </div>
                 </div>
