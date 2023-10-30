@@ -5,6 +5,7 @@
     height: 100%;
     width: 100%;
     background-image: url("/National-Remediation-Background.webp");
+    background-size: 100% 100%;
   }
 .nrpMobileHeader{
     display: none;
@@ -42,7 +43,8 @@
 }
 .linkText{
     background-color: #FDA029;
-    border-radius: 60px;
+    /* border-radius: 60px; */
+    border-radius: 50vw;
     border: none;
     color: #1A3A66;
     height: 7.5vh;

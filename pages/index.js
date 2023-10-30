@@ -124,38 +124,40 @@ export default function Home() {
             <div className="d-flex flex-column align-items-center justify-content-center w-100 h-100">
               <div className="aboutUsBackground">
                 <div className="aboutUsWave">
-                  <div className="row aboutUsContent">
-                    <div className="col" style={{ paddingLeft: "8vw" }}>
-                      <h1>ABOUT US</h1>
-                      <div className="borderline"></div>
-                      <p className="aboutUsText">
-                        Tagpros is a K-12 supplemental learning and recruitment
-                        platform. We aim to connect students with expect
-                        teachers worlwide, and provide local and international
-                        career opportunities to teachers, through our
-                        partnerships with school districts and various
-                        institutions around the world.
-                      </p>
-                      <button className="aboutUsButton">Learn More</button>
-                    </div>
-                    <div
-                      className="col ytContainer"
-                      style={{ paddingRight: "3vw" }}
-                    >
-                      <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/NraS2OpfHO0?si=Pxo65yArlj2iNm3b"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; 
+                  <div className="aboutUsContent">
+                    <div className="aboutUsTextVideo">
+                      <div className="aboutUsLeft d-flex justify-content-center align-items-start flex-column">
+                        <h1 style={{ color: "#0A5EAB", fontWeight: "Bold" }}>
+                          ABOUT US
+                        </h1>
+                        <div className="borderline"></div>
+                        <p className="aboutUsText">
+                          Tagpros is a K-12 supplemental learning and
+                          recruitment platform. We aim to connect students with
+                          expect teachers worlwide, and provide local and
+                          international career opportunities to teachers,
+                          through our partnerships with school districts and
+                          various institutions around the world.
+                        </p>
+                        <button className="aboutUsButton">Learn More</button>
+                      </div>
+                      <div className="aboutUsVideo">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/NraS2OpfHO0?si=Pxo65yArlj2iNm3b"
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
+                          allowFullScreen
+                        ></iframe>
+                      </div>
                     </div>
+
                     <div className="ytContainerMobile">
                       <iframe
-                        width="560"
+                        width="95%"
                         height="315"
                         src="https://www.youtube.com/embed/NraS2OpfHO0?si=Pxo65yArlj2iNm3b"
                         title="YouTube video player"
@@ -165,19 +167,9 @@ export default function Home() {
                         allowFullScreen
                       ></iframe>
                     </div>
-                    <div className="carouselContainer">
-                      <div className="row">
-                        <div
-                          className="col"
-                          style={{ paddingLeft: "7vw", paddingTop: "2vw" }}
-                        >
-                          <PSDCarousel />
-                        </div>
-
-                        <div className="col" style={{ paddingRight: "4vw" }}>
-                          <MTPTCarousel />
-                        </div>
-                      </div>
+                    <div className="carouselContainer ">
+                      <PSDCarousel />
+                      <MTPTCarousel />
                     </div>
                     <div className="carouselContainerMobile">
                       <PSDCarousel />
