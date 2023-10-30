@@ -95,72 +95,87 @@ export default function Home() {
             </div>
           </section>
           <section className="nrpContainer">
-              <div className="backgroundImage">
-                <div className="nrpMobileHeader">
-                  NATIONAL REMEDIATION PROGRAM 2023
-                </div>
-                <div className="imageOverlay">
-                  <div className="nrpTextbox">
-                    <div className="nrpHeader">
-                      NATIONAL REMEDIATION <br /> PROGRAM 2023
-                    </div>
-                    <div className="nrpText">
-                      <p>For our nonprofit organization, we aim to provide quality high-dosage 
-                      tutoring to students in public schools around the Philippines, in an effort to combat the learning loss brought by the pandemic.
-                      </p>
-                    </div>
-                    <div className="linkButton">
-                      <button className="linkText">Visit Tagpros.org</button>
-                    </div>
+            <div className="backgroundImage">
+              <div className="nrpMobileHeader">
+                NATIONAL REMEDIATION PROGRAM 2023
+              </div>
+              <div className="imageOverlay">
+                <div className="nrpTextbox">
+                  <div className="nrpHeader">
+                    NATIONAL REMEDIATION <br /> PROGRAM 2023
+                  </div>
+                  <div className="nrpText">
+                    <p>
+                      For our nonprofit organization, we aim to provide quality
+                      high-dosage tutoring to students in public schools around
+                      the Philippines, in an effort to combat the learning loss
+                      brought by the pandemic.
+                    </p>
+                  </div>
+                  <div className="linkButton">
+                    <button className="linkText">Visit Tagpros.org</button>
                   </div>
                 </div>
               </div>
+            </div>
           </section>
           <section className="Hero1Container"></section>
           <section className="aboutUsContainer">
             <div className="d-flex flex-column align-items-center justify-content-center w-100 h-100">
               <div className="aboutUsBackground">
                 <div className="aboutUsWave">
-                  <div className="row aboutUsContent">
-                    <div className="col" style={{ paddingLeft: "8vw" }}>
-                      <h1>ABOUT US</h1>
-                      <div className="borderline"></div>
-                      <p className="aboutUsText">
-                        Tagpros is a K-12 supplemental learning and recruitment
-                        platform. We aim to connect students with expect
-                        teachers worlwide, and provide local and international
-                        career opportunities to teachers, through our
-                        partnerships with school districts and various
-                        institutions around the world.
-                      </p>
-                      <button className="aboutUsButton">Learn More</button>
+                  <div className="aboutUsContent">
+                    <div className="aboutUsTextVideo">
+                      <div className="aboutUsLeft d-flex justify-content-center align-items-start flex-column">
+                        <h1 style={{ color: "#0A5EAB", fontWeight: "Bold" }}>
+                          ABOUT US
+                        </h1>
+                        <div className="borderline"></div>
+                        <p className="aboutUsText">
+                          Tagpros is a K-12 supplemental learning and
+                          recruitment platform. We aim to connect students with
+                          expect teachers worlwide, and provide local and
+                          international career opportunities to teachers,
+                          through our partnerships with school districts and
+                          various institutions around the world.
+                        </p>
+                        <button className="aboutUsButton">Learn More</button>
+                      </div>
+                      <div className="aboutUsVideo">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/NraS2OpfHO0?si=Pxo65yArlj2iNm3b"
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
                     </div>
-                    <div
-                      className="col ytContainer"
-                      style={{ paddingRight: "3vw" }}
-                    >
+
+                    <div className="ytContainerMobile">
                       <iframe
-                        width="560"
+                        width="95%"
                         height="315"
                         src="https://www.youtube.com/embed/NraS2OpfHO0?si=Pxo65yArlj2iNm3b"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullscreen
+                        allowFullScreen
                       ></iframe>
                     </div>
-                    <div className="row">
-                      <div
-                        className="col"
-                        style={{ paddingLeft: "7vw", paddingTop: "2vw" }}
-                      >
-                        <PSDCarousel />
-                      </div>
-
-                      <div className="col" style={{ paddingRight: "4vw" }}>
-                        <MTPTCarousel />
-                      </div>
+                    <div className="carouselContainer ">
+                      <PSDCarousel />
+                      <MTPTCarousel />
+                    </div>
+                    <div className="carouselContainerMobile">
+                      <PSDCarousel />
+                    </div>
+                    <div className="carouselContainerMobile">
+                      <MTPTCarousel />
                     </div>
                   </div>
                 </div>
