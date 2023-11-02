@@ -117,7 +117,8 @@ body{
   height: 100% !important;
 }
 .aboutUsLeft{
-  width: 50vw;
+  /* width: 50vw; */
+  width: 35rem;
   padding-left: 3vw;
 }
 .aboutUsTextVideo{
@@ -128,19 +129,26 @@ body{
 }
 
 .aboutUsBackground{
+  position: relative;
   width: 100% !important;
   height: 100% !important;
-  background-image:url("/white bg.webp");
+  /* background-image:url("/white bg.webp"); */
   background-attachment: fixed;
   color: white;
 }
-
+.aboutUsWaveSVG{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
 .aboutUsWave{
   width: 100% !important;
   height: 100% !important;
-  background-image:url("/wave2.webp");
+  /* background-image:url("/waves3.png"); */
   background-position: 50%;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
@@ -281,7 +289,7 @@ display: none;
 }
 .carouselContainer{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .carouselContainerMobile{
@@ -302,6 +310,9 @@ display: none;
   .borderline{
     width: 25%;
     margin-bottom: 30px;
+  }
+  .aboutUsWaveSVG{
+    display: none;
   }
   .aboutUsText{
     font-size: 15px;
@@ -377,7 +388,9 @@ display: none;
   .borderline{
     width: 70%;
   }
-
+  .aboutUsWaveSVG{
+    display: none;
+  }
   .aboutUsText{
     font-size: 15px;
     margin-bottom: 0px;

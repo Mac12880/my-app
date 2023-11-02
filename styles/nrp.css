@@ -1,12 +1,12 @@
 .nrpContainer{
-    height: 100vh;
+    min-height: 100vh;
 }
 .backgroundImage{
     height: 100%;
     width: 100%;
     background-image: url("/National-Remediation-Background.webp");
     background-size: 100% 100%;
-  }
+}
 .nrpMobileHeader{
     display: none;
 }
@@ -21,6 +21,7 @@
 .nrpTextbox{
     padding-left: 40vw;
     padding-top: 12.5vh;
+    padding-bottom: 12.5vh;
 }
 .nrpHeader{
     font-family: 'Poppins', sans-serif;
@@ -39,7 +40,13 @@
 }
 .linkButton{
     padding-top: 5vh;
-    padding-left: 32.5vw;
+    padding-right: 5vw;
+    /* padding-left: 32.5vw; */
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    
+    
 }
 .linkText{
     background-color: #FDA029;
@@ -48,15 +55,17 @@
     border: none;
     color: #1A3A66;
     height: 7.5vh;
-    width: 20vw;
+    width: fit-content;
     font-family: 'Poppins', sans-serif;
     font-size: 3vh;
     font-weight: 600;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }    
-
+/* Mobile */
 @media screen and (max-width: 700px) {
 .nrpContainer{
-    height: 60vh;
+    min-height: 60vh;
 }
 .nrpMobileHeader{
     height: 20%;
@@ -81,6 +90,7 @@
 .nrpTextbox{
     padding-left: 45vw;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .nrpHeader{
     display: none;  
@@ -114,15 +124,16 @@
     font-weight: 700;
 }    
 }
-
+/* Ipad */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     
 .nrpContainer{
-    height: 40vh;
+    min-height: 40vh;
 }
 .nrpTextbox{
     padding-left: 40vw;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .nrpHeader{
     font-family: 'Poppins', sans-serif;
